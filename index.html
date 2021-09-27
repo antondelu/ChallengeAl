@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pantalla de ingreso</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="formLogin">
+        <form>
+            <div>
+                <h2 class="titleLogin">Iniciar sesion</h2>
+                <div class="form">
+                    <input class="formControl" type="email" placeholder="Email " id="user">
+                    <br>
+                    <input type="password" class="formControl" id="inputPassword2" placeholder="contraseña"
+                        id="contraseña">
+                    <br>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Recuérdame
+                        </label>
+                        <br><br>
+                        <button class="buttonLogin" id="login" onclick="saveUser()">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </section>
+
+        <script src="/js/index.js"></script>
+        <script src="./js/user.js"></script>
+
+</body>
+
+</html>
