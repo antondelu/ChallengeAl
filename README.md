@@ -1,4 +1,4 @@
-# ChallengeAl
+# ChallengeAlkemy
 
 Desafio Alkemy - Desarrollo de aplicacion para contabilidad de gastos personales.
 
