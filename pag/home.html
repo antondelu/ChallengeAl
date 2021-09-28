@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <img src="logo.png" alt="">
+    <h2 id="usuario">Marco De Luca</h2>
+    <button onclick="deleteUser()" class="close" href="./index.html" id="remover">Cerrar
+      sesion </button>
+  </nav>
+
+  <div class="main">
+    <form id="weeklyCalculation">
+      <input type="text" placeholder="Mes" id="mes" required />
+      <input type="number" placeholder="Presupuesto" id="presupuesto" required />
+      <input type="number" placeholder="Gastos del hogar" id="hogar" required />
+      <input type="number" placeholder="Transporte" id="transporte" required />
+      <input type="number" placeholder="Comida" id="comida" required />
+      <input type="submit" value="Calcular" class="btn blue z-depth-4" />
+      <div class="container">
+        <div class="icons">
+      
+          <h5>Mes<i class="fas fa-calendar-week"></i></h5>
+      
+          <h5>Ingreso<i class="fas fa-arrow-up"></i></h5>
+      
+          <h5>Egreso<i class="fas fa-arrow-down"></i></h5>
+      
+          <h5>Total<i class="fas fa-dollar-sign"></i></h5>
+        </div>
+        <br>
+        <div class="data">
+          <div class="result" id="result"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="../app.js"></script>
+  <script src="./js/home.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/user.js"></script>
+</body>
+
+</html>
